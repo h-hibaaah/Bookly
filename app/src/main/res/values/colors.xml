@@ -4,5 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name = "burgundy">#6B2635</color>
     <color name = "cream">#F8F5F0</color>
-    <color name = "gold">#C9A66B</color>
+    <color name = "gold">#E6CFA9</color>
+    <color name = "light_burgundy">#892D41</color>
+
 </resources>

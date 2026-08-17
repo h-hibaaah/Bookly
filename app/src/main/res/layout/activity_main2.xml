@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/cormorant_garamond"
+        android:fontFamily="@font/cormorant_garamond_bold_italic"
         android:text="Your next chapter begins here"
         android:textColor="@color/burgundy"
         android:textSize="20sp"
@@ -47,7 +47,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
+        android:fontFamily="@font/cormorant_garamond"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:id="@+id/editText2"
+        android:textColorHint="@color/burgundy"
         android:layout_width="330dp"
         android:layout_height="65dp"
         android:layout_marginTop="32dp"
@@ -55,14 +59,17 @@
         android:hint="Enter your Email Address"
         android:inputType="textEmailAddress"
         android:padding="10dp"
-        android:textColorHint="@color/cream"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <EditText
+        android:fontFamily="@font/cormorant_garamond"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:id="@+id/editText"
+        android:textColorHint="@color/burgundy"
         android:layout_width="330dp"
         android:layout_height="65dp"
         android:layout_marginTop="16dp"
@@ -70,17 +77,33 @@
         android:hint="Enter your Password"
         android:inputType="textPassword"
         android:padding="10dp"
-        android:textColorHint="@color/cream"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/cormorant_garamond_bold_italic"
+        android:text="Forgot Password?"
+        android:textColor="@color/burgundy"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
         android:layout_width="340dp"
         android:layout_height="70dp"
         android:layout_marginTop="70dp"
-        android:background="@drawable/edittext"
+        android:background="@drawable/button"
         android:padding="10dp"
         android:text="Login"
         android:textColor="@color/cream"
@@ -90,4 +113,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/cormorant_garamond_bold_italic"
+        android:text="Don't have any account? SignUp"
+        android:textColor="@color/burgundy"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
