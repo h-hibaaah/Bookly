@@ -14,8 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:textStyle="bold"
         android:layout_marginEnd="80dp"
-        android:fontFamily="@font/cormorant_garamond_bold_italic"
+        android:fontFamily="@font/cormorant_garamond_bold"
         android:text="Hello Hibaaah"
         android:textColor="@color/burgundy"
         android:textSize="32sp"
@@ -28,24 +29,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="150dp"
-        android:fontFamily="@font/cormorant_garamond_bold"
+        android:fontFamily="@font/cormorant_garamond_bold_italic"
         android:text="What are you reading today?"
         android:textColor="@color/light_burgundy"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <SearchView
-        android:layout_width="wrap_content"
+    <com.google.android.material.search.SearchBar
+        android:backgroundTint="@color/cream"
+        app:strokeColor="@color/gold"
+        app:strokeWidth="2dp"
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="36dp"
         android:iconifiedByDefault="false"
-        android:queryHint="Search your favourite book here "
+        android:text="Search your favourite book here "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -56,10 +60,25 @@
         android:layout_height="70dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/profile_round" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="360dp"
+        android:layout_height="280dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp">
+
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
