@@ -6,6 +6,9 @@
         <item name="colorSecondary">@color/gold</item>
         <item name="android:windowBackground">@color/cream</item>
     </style>
-
     <style name="Theme.Bookly" parent="Base.Theme.Bookly" />
+    <style name="profile_round">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>
