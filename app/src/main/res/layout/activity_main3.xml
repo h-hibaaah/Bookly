@@ -147,6 +147,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
         android:layout_width="360dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
@@ -220,6 +221,196 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="320dp"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:text="VIEW ALL"
+        android:textColor="@color/burgundy"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/outline_arrow_forward_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_marginLeft="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="5dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/white"
+                android:layout_height="140dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/book5"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="English Grammar"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cormorant_garamond_bold_italic"
+                        android:textSize="20sp"
+                        android:textColor="@color/burgundy"
+                        />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_marginLeft="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="5dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/white"
+                android:layout_height="140dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/book4"
+                        />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nothing is between us"
+                        android:fontFamily="@font/cormorant_garamond_bold_italic"
+                        android:textSize="18sp"
+                        android:textColor="@color/burgundy"
+                        />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_marginLeft="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="5dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/white"
+                android:layout_height="140dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/book2"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Untold Diaries"
+                        android:fontFamily="@font/cormorant_garamond_bold_italic"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/burgundy"
+                        />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_marginLeft="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="5dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/white"
+                android:layout_height="140dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/book1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Obsessed in Silence"
+                        android:fontFamily="@font/cormorant_garamond_bold_italic"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/burgundy"
+                        />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_marginLeft="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="5dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/white"
+                android:layout_height="140dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/book3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="When we love again"
+                        android:fontFamily="@font/cormorant_garamond_bold_italic"
+                        android:textSize="20sp"
+                        android:textColor="@color/burgundy"
+                        />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
