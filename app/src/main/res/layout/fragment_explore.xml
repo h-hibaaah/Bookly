@@ -123,6 +123,7 @@
             app:layout_constraintTop_toBottomOf="@+id/categories" />
 
         <HorizontalScrollView
+            android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="320dp"
             android:layout_marginTop="10dp"
@@ -291,6 +292,21 @@ android:layout_margin="10dp"
 
             </LinearLayout>
         </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/text2"
+            android:layout_marginEnd="200dp"
+            android:fontFamily="@font/cormorant_garamond_bold"
+            android:text="Trending Books"
+            android:textColor="@color/burgundy"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
