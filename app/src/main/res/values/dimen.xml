@@ -12,10 +12,11 @@
     <dimen name="popular_card_height">200dp</dimen>
     <dimen name="popular_image_width">105dp</dimen>
     <dimen name="popular_image_height">120dp</dimen>
+    <dimen name="Small_text_size">12dp</dimen>
     <dimen name="popular_card_text_size">16sp</dimen>
-
+<dimen name="linear_container_height">85dp</dimen>
     <dimen name="trending_scroll_height">140dp</dimen>
     <dimen name="trending_card_size">120dp</dimen>
-    <dimen name="profile_card_size">250dp</dimen>
+    <dimen name="profile_card_size">170dp</dimen>
 
 </resources>

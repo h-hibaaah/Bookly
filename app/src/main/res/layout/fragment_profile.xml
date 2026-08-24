@@ -67,21 +67,181 @@ android:src="@drawable/profile"
         app:layout_constraintTop_toBottomOf="@+id/profile"
         android:textColor="@color/burgundy"
         android:fontFamily="@font/cormorant_garamond_bold"
-        android:textSize="22sp"
+        android:textSize="@dimen/section_title_size"
         />
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:cardElevation="10dp"
+        android:id="@+id/readingStatsCard"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/profile_card_size"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
         app:cardBackgroundColor="@color/cream"
-        app:strokeWidth="2dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp"
         app:strokeColor="@color/gold"
+        app:strokeWidth="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview22"
-        android:layout_margin="20dp"
-        android:layout_height="250dp">
+        app:layout_constraintTop_toBottomOf="@id/textview22">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="14dp">
+
+            <!-- Heading -->
+            <TextView
+                android:id="@+id/readingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cormorant_garamond_bold"
+                android:text="Your Reading"
+                android:textColor="@color/burgundy"
+                android:textSize="@dimen/heading_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Stats Container -->
+            <LinearLayout
+                android:id="@+id/statsContainer"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/linear_container_height"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/readingTitle">
+
+                <!-- Finished -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:text="24"
+                        android:textColor="@color/burgundy"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finished"
+                        android:textColor="@color/burgundy"
+                        android:textSize="@dimen/Small_text_size" />
+
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:background="@color/gold" />
+
+                <!-- Reading -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:text="07"
+                        android:textColor="@color/burgundy"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reading"
+                        android:textColor="@color/burgundy"
+                        android:textSize="@dimen/Small_text_size" />
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:background="@color/gold" />
+
+                <!-- Saved -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:text="12"
+                        android:textColor="@color/burgundy"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saved"
+                        android:textColor="@color/burgundy"
+                        android:textSize="@dimen/Small_text_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/readingCardContinue"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/profile_card_size"
+        app:cardBackgroundColor="@color/cream"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp"
+        app:strokeColor="@color/gold"
+        app:strokeWidth="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readingStatsCard"
+        android:layout_margin="20dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/continuereading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cormorant_garamond_bold"
+                android:gravity="center"
+                android:text="Pick Up Where You Left Off"
+                android:textColor="@color/burgundy"
+                android:textSize="@dimen/heading_text_size"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
