@@ -46,13 +46,13 @@ class MainActivity3 : AppCompatActivity() {
                         .commit()
                     true
                 }
-//
-//                R.id.nav_profile -> {
-//                    supportFragmentManager.beginTransaction()
-//                        .replace(R.id.fragmentContainer, ProfileFragment())
-//                        .commit()
-//                    true
-//                }
+
+                R.id.nav_profile -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, ProfileFragment())
+                        .commit()
+                    true
+                }
 
                 else -> false
             }
