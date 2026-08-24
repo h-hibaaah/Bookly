@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/acc"
+            android:title="Account"
+            />
+        <item android:title="Notifications"
+            android:id="@+id/noti"
+            />
+    </group>
+<group>
+    <item android:id="@+id/dark"
+        android:title="Dark Theme"
+        />
+    <item android:id="@+id/lang"
+        android:title="Language"
+        />
+</group>
+    <group>
+        <item android:title="Privacy"
+            android:id="@+id/priv"
+            />
+        <item android:title="About"
+            android:id="@+id/about"
+            />
+        <item android:title="Logout"
+            android:id="@+id/out"
+            />
+    </group>
+
+
+</menu>
