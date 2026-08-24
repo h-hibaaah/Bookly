@@ -4,12 +4,9 @@
     <!-- Headings -->
     <dimen name="heading_text_size">26sp</dimen>
     <dimen name="section_title_size">22sp</dimen>
-
-    <!-- Category buttons -->
     <dimen name="category_button_height">40dp</dimen>
     <dimen name="category_button_text_size">11sp</dimen>
 
-    <!-- Popular Books -->
     <dimen name="popular_scroll_height">220dp</dimen>
     <dimen name="popular_card_width">140dp</dimen>
     <dimen name="popular_card_height">200dp</dimen>
@@ -17,8 +14,8 @@
     <dimen name="popular_image_height">120dp</dimen>
     <dimen name="popular_card_text_size">16sp</dimen>
 
-    <!-- Trending Books -->
     <dimen name="trending_scroll_height">140dp</dimen>
     <dimen name="trending_card_size">120dp</dimen>
+    <dimen name="profile_card_size">250dp</dimen>
 
 </resources>
