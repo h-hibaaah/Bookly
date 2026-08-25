@@ -13,7 +13,6 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main3)
-
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
         if (savedInstanceState == null) {
@@ -46,13 +45,13 @@ class MainActivity3 : AppCompatActivity() {
                         .commit()
                     true
                 }
-//
-//                R.id.nav_profile -> {
-//                    supportFragmentManager.beginTransaction()
-//                        .replace(R.id.fragmentContainer, ProfileFragment())
-//                        .commit()
-//                    true
-//                }
+
+                R.id.nav_profile -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, ProfileFragment())
+                        .commit()
+                    true
+                }
 
                 else -> false
             }
