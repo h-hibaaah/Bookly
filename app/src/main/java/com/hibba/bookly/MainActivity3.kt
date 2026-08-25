@@ -13,7 +13,6 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main3)
-
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
         if (savedInstanceState == null) {
