@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Headings -->
+    <!-- Common / Headings -->
     <dimen name="heading_text_size">26sp</dimen>
     <dimen name="section_title_size">22sp</dimen>
 
@@ -20,6 +20,14 @@
     <!-- Trending Books -->
     <dimen name="trending_scroll_height">140dp</dimen>
     <dimen name="trending_card_size">120dp</dimen>
+
+    <!-- Other Common Dimensions -->
+    <dimen name="Small_text_size">12dp</dimen>
+    <dimen name="linear_container_height">85dp</dimen>
+
+    <!-- Profile Screen -->
+    <dimen name="profile_card_size">170dp</dimen>
+    <dimen name="profile_card2_height">240dp</dimen>
 
     <!-- Home Screen -->
     <dimen name="home_greeting_text_size">24sp</dimen>
