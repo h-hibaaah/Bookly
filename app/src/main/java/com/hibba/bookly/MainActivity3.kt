@@ -33,19 +33,19 @@ class MainActivity3 : AppCompatActivity() {
                     true
                 }
 
-                R.id.nav_explore -> {
+                R.id.nav_search -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, SearchFragment())
                         .commit()
                     true
                 }
-//
-//                R.id.nav_library -> {
-//                    supportFragmentManager.beginTransaction()
-//                        .replace(R.id.fragmentContainer, LibraryFragment())
-//                        .commit()
-//                    true
-//                }
+
+                R.id.nav_explore -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, ExploreFragment())
+                        .commit()
+                    true
+                }
 //
 //                R.id.nav_profile -> {
 //                    supportFragmentManager.beginTransaction()
