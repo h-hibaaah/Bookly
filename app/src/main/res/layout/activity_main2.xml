@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:fontFamily="@font/cormorant_garamond"
+        android:fontFamily="@font/cormorant_garamond_bold_italic"
         android:textStyle="bold"
         android:textSize="20sp"
         android:id="@+id/editText2"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <EditText
-        android:fontFamily="@font/cormorant_garamond"
+        android:fontFamily="@font/cormorant_garamond_bold_italic"
         android:textStyle="bold"
         android:textSize="20sp"
         android:id="@+id/editText"

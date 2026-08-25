@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.drawerlayout.widget.DrawerLayout
 import android.widget.ImageView
 import androidx.core.view.GravityCompat
+import com.google.android.material.button.MaterialButton
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -31,7 +32,23 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+        val button = view.findViewById<MaterialButton>(R.id.continueReadingButton)
+        button.setOnClickListener {
+            button.animate()
+                .scaleX(0.97f)
+                .scaleY(0.97f)
+                .setDuration(100)
+                .withEndAction {
+                    button.animate()
+                        .scaleX(1f)
+                        .scaleY(1f)
+                        .setDuration(100)
+                        .start()
+                }
+                .start()
+        }
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

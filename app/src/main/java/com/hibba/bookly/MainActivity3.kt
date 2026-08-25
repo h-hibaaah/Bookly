@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
+import android.content.Intent
 class MainActivity3 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,12 +24,12 @@ class MainActivity3 : AppCompatActivity() {
         bottomNavigation.setOnItemSelectedListener { item ->
 
             when (item.itemId) {
-
                 R.id.nav_home -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, HomeFragment())
                         .commit()
                     true
+
                 }
 
                 R.id.nav_search -> {

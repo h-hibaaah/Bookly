@@ -16,14 +16,14 @@ class MainActivity2 : AppCompatActivity() {
         val button = findViewById<AppCompatButton>(R.id.appCompatButton)
         button.setOnClickListener {
             button.animate()
-                .scaleX(0.9f)
-                .scaleY(0.9f)
-                .setDuration(1000)
+                .scaleX(0.97f)
+                .scaleY(0.97f)
+                .setDuration(100)
                 .withEndAction {
                     button.animate()
                         .scaleX(1f)
                         .scaleY(1f)
-                        .setDuration(1000)
+                        .setDuration(100)
                         .withEndAction {
                             val intent = Intent(this, MainActivity3::class.java)
                             startActivity(intent)

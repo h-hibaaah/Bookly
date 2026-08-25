@@ -504,9 +504,11 @@
             </HorizontalScrollView>
 <androidx.appcompat.widget.AppCompatButton
     android:layout_width="170dp"
+    android:id="@+id/view_all_button"
     android:layout_marginTop="16dp"
     android:layout_height="wrap_content"
     android:text="View All"
+    android:textSize="20sp"
     android:textColor="@color/cream"
     android:fontFamily="@font/cormorant_garamond_bold"
     android:background="@drawable/button"
